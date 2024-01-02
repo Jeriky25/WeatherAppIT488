@@ -39,28 +39,37 @@
             this.btnShowWeather = new System.Windows.Forms.Button();
             this.txtHumidity = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.status = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnWeek = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 58);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(498, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(24, 13);
+            this.label1.Size = new System.Drawing.Size(53, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "City";
             // 
             // txtCity
             // 
-            this.txtCity.Location = new System.Drawing.Point(177, 55);
+            this.txtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCity.Location = new System.Drawing.Point(570, 81);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(100, 20);
+            this.txtCity.Size = new System.Drawing.Size(165, 31);
             this.txtCity.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 99);
+            this.label2.Location = new System.Drawing.Point(41, 38);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 13);
             this.label2.TabIndex = 2;
@@ -68,7 +77,7 @@
             // 
             // txtMaxTemp
             // 
-            this.txtMaxTemp.Location = new System.Drawing.Point(177, 96);
+            this.txtMaxTemp.Location = new System.Drawing.Point(148, 35);
             this.txtMaxTemp.Name = "txtMaxTemp";
             this.txtMaxTemp.Size = new System.Drawing.Size(100, 20);
             this.txtMaxTemp.TabIndex = 3;
@@ -76,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(67, 143);
+            this.label3.Location = new System.Drawing.Point(41, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 4;
@@ -84,7 +93,7 @@
             // 
             // txtMinTemp
             // 
-            this.txtMinTemp.Location = new System.Drawing.Point(177, 140);
+            this.txtMinTemp.Location = new System.Drawing.Point(148, 78);
             this.txtMinTemp.Name = "txtMinTemp";
             this.txtMinTemp.Size = new System.Drawing.Size(100, 20);
             this.txtMinTemp.TabIndex = 5;
@@ -92,7 +101,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 184);
+            this.label4.Location = new System.Drawing.Point(41, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 6;
@@ -100,14 +109,14 @@
             // 
             // txtWindSpeed
             // 
-            this.txtWindSpeed.Location = new System.Drawing.Point(177, 181);
+            this.txtWindSpeed.Location = new System.Drawing.Point(148, 118);
             this.txtWindSpeed.Name = "txtWindSpeed";
             this.txtWindSpeed.Size = new System.Drawing.Size(100, 20);
             this.txtWindSpeed.TabIndex = 7;
             // 
             // btnShowWeather
             // 
-            this.btnShowWeather.Location = new System.Drawing.Point(571, 283);
+            this.btnShowWeather.Location = new System.Drawing.Point(287, 199);
             this.btnShowWeather.Name = "btnShowWeather";
             this.btnShowWeather.Size = new System.Drawing.Size(96, 38);
             this.btnShowWeather.TabIndex = 8;
@@ -117,7 +126,7 @@
             // 
             // txtHumidity
             // 
-            this.txtHumidity.Location = new System.Drawing.Point(177, 226);
+            this.txtHumidity.Location = new System.Drawing.Point(148, 155);
             this.txtHumidity.Name = "txtHumidity";
             this.txtHumidity.Size = new System.Drawing.Size(100, 20);
             this.txtHumidity.TabIndex = 10;
@@ -125,17 +134,69 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(67, 229);
+            this.label5.Location = new System.Drawing.Point(41, 158);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Humidity";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(262, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 139);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
+            // status
+            // 
+            this.status.AutoSize = true;
+            this.status.Location = new System.Drawing.Point(311, 54);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(0, 13);
+            this.status.TabIndex = 13;
+            this.status.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(44, 253);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(732, 226);
+            this.dataGridView1.TabIndex = 14;
+            // 
+            // btnWeek
+            // 
+            this.btnWeek.Location = new System.Drawing.Point(673, 485);
+            this.btnWeek.Name = "btnWeek";
+            this.btnWeek.Size = new System.Drawing.Size(103, 38);
+            this.btnWeek.TabIndex = 15;
+            this.btnWeek.Text = "Week";
+            this.btnWeek.UseVisualStyleBackColor = true;
+            this.btnWeek.Click += new System.EventHandler(this.btnWeek_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(564, 486);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(103, 37);
+            this.btnClose.TabIndex = 16;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 537);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnWeek);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.status);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtHumidity);
             this.Controls.Add(this.btnShowWeather);
@@ -150,6 +211,8 @@
             this.Name = "Form1";
             this.Text = "Weather";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +231,11 @@
         private System.Windows.Forms.Button btnShowWeather;
         private System.Windows.Forms.TextBox txtHumidity;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label status;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnWeek;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

@@ -33,6 +33,7 @@
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtRgstUserName
@@ -52,7 +53,7 @@
             // btnCreateAccount
             // 
             this.btnCreateAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAccount.Location = new System.Drawing.Point(174, 200);
+            this.btnCreateAccount.Location = new System.Drawing.Point(248, 209);
             this.btnCreateAccount.Name = "btnCreateAccount";
             this.btnCreateAccount.Size = new System.Drawing.Size(116, 62);
             this.btnCreateAccount.TabIndex = 4;
@@ -78,11 +79,23 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Password";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(98, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 62);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 311);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCreateAccount);
@@ -101,5 +114,6 @@
         private System.Windows.Forms.Button btnCreateAccount;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }

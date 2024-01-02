@@ -75,5 +75,12 @@ namespace WeatherApp
                   
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            loginScreen.Show();
+            this.Hide();
+        }
     }
 }

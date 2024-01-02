@@ -26,7 +26,7 @@ namespace WeatherApp
 
             try
             {
-                string querry = "SELECT * FROM LoginInfo WHERE username = '" + userName + "' AND password = '" + password + "'";
+                string querry = "SELECT * FROM LoginInfo WHERE username = '" + userName.Trim() + "' AND password = '" + password.Trim() + "'";
                 SqlDataAdapter adapter = new SqlDataAdapter(querry, conn);
 
                 DataTable dt = new DataTable();
