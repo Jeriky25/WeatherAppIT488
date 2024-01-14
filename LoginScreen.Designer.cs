@@ -34,6 +34,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnSignUp = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtUserName
@@ -81,7 +82,7 @@
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Location = new System.Drawing.Point(168, 307);
+            this.btnSignUp.Location = new System.Drawing.Point(216, 306);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(75, 23);
             this.btnSignUp.TabIndex = 5;
@@ -89,11 +90,23 @@
             this.btnSignUp.UseVisualStyleBackColor = true;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(118, 306);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(408, 388);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
@@ -115,5 +128,6 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnSignUp;
+        private System.Windows.Forms.Button btnClose;
     }
 }

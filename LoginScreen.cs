@@ -58,5 +58,10 @@ namespace WeatherApp
             register.Show();
             this.Hide();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -71,6 +71,10 @@ namespace WeatherApp
                     {
                         MessageBox.Show("Error");
                     }
+                    finally
+                    { 
+                        conn.Close();
+                    }
                 }
                   
             }
